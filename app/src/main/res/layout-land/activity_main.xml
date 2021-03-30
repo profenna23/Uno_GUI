@@ -4,8 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_error"
+    android:background="#B59489"
     tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/unoButton"
+        android:layout_width="185dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="150dp"
+        android:backgroundTint="#FF0000"
+        android:text="UNO"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="272dp"
+        android:layout_height="506dp"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/p4card1"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:backgroundTint="#000000"
+            android:text="UNO"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/p4card2"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:backgroundTint="#2C2C2C"
+            android:text="UNO"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/p4card3"
+            android:layout_width="match_parent"
+            android:layout_height="154dp"
+            android:backgroundTint="#3E3E3E"
+            android:text="UNO"
+            android:textSize="30dp" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -95,6 +142,7 @@
                 android:text="UNO"
                 android:textSize="30dp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -169,6 +217,57 @@
             android:layout_weight="1"
             android:padding="10dp"
             android:text="DEAL" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="206dp">
+
+        <LinearLayout
+            android:id="@+id/player3"
+            android:layout_width="match_parent"
+            android:layout_height="451dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/p3card1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="UNO"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/p3card2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="#2C2C2C"
+                android:text="UNO"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/p3card3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3E3E3E"
+                android:text="UNO"
+                android:textSize="30dp" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
